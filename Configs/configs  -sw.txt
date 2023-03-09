@@ -1,0 +1,24 @@
+enable
+configure terminal
+hostname S0
+vlan 2
+name MNGT_VoiP
+exit
+vlan 10
+name FRONT
+exit
+vlan 11
+name FRONT_VoiP
+exit
+vlan 20
+name BACK
+exit
+vlan 21
+name BACK_VoiP
+exit
+vlan 30
+name NETE
+exit
+vlan 31
+name NETE_VoiP
+exit
