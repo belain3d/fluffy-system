@@ -1,0 +1,104 @@
+th {
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#mng {
+    background-color: #a4d38a;
+}
+
+#fr {
+    background-color: #979cd7;
+}
+
+#ba {
+    background-color: #eddf62;
+}
+
+#net {
+    background-color: #e2b284;
+}
+
+#tes {
+    background-color: #a5bae2;
+}
+
+#ux {
+    background-color: #888fab;
+}
+
+#zold {
+    background-color: #c4e1b0;
+}
+
+#kek {
+    background-color: #bbc0e4;
+}
+
+#sarga {
+    background-color: #f1eb95;
+}
+
+#narancs {
+    background-color: #eaccaa;
+}
+
+#vilkek {
+    background-color: #c4d0eb;
+}
+
+#szurke {
+    background-color: #adb3c7;
+}
+
+#hzold {
+    background-color: #deefd6;
+}
+
+#hkek {
+    background-color: #d9dbf0;
+}
+
+#hsarga {
+    background-color: #f7f5c9;
+}
+
+#hnarancs {
+    background-color: #f4e3d3;
+}
+
+#hvilkek {
+    background-color: #dee6f5;
+}
+
+#hszurke {
+    background-color: #d4d7e0;
+}
+
+#fsz {
+    background-color: #f0f0f0;
+}
+
+#egy {
+    background-color: #d5d5d5;
+}
+
+#ket {
+    background-color: #bdbdbd;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
