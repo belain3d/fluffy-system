@@ -2,7 +2,7 @@ enable
  configure terminal
   interface fa0/1
    switchport mode access
-   switchport acces vlan 2
+   switchport voice vlan 2
    exit
   interface fa0/2
    switchport mode access
@@ -10,7 +10,7 @@ enable
    exit
   interface fa0/3
    switchport mode access
-   switchport acces vlan 31
+   switchport voice vlan 31
    exit
   interface fa0/4
    switchport mode access
@@ -18,7 +18,7 @@ enable
    exit
   interface fa0/5
    switchport mode access
-   switchport acces vlan 51
+   switchport voice vlan 51
    exit
   interface fa0/6
    switchport mode access
@@ -30,7 +30,7 @@ enable
    exit
   interface fa0/21
    switchport mode access
-   switchport acces vlan 72
+   switchport acces vlan 70
    exit
   interface fa0/22
    switchport mode access

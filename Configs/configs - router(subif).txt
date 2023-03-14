@@ -1,0 +1,68 @@
+enable
+configure terminal
+hostname R1
+interface fa0/0.1
+encapsulation dot1Q 1
+description MNGT
+ip address 192.168.1.206 255.255.255.248
+exit
+interface fa0/0.2
+description MNGT_VoIP
+encapsulation dot1Q 2
+ip address 192.168.1.198 255.255.255.248
+exit
+interface fa0/0.20
+description FRONT
+encapsulation dot1Q 20
+ip address 192.168.1.78 255.255.255.240
+exit
+interface fa0/0.21
+description FRONT_VoIP
+encapsulation dot1Q 21
+ip address 192.168.1.94 255.255.255.240
+exit
+interface fa0/0.30
+description BACK
+encapsulation dot1Q 30
+ip address 192.168.1.46 255.255.255.240
+exit
+interface fa0/0.31
+description BACK_VoIP
+encapsulation dot1Q 31
+ip address 192.168.1.62 255.255.255.240
+exit
+interface fa0/0.40
+description NETE
+encapsulation dot1Q 40
+ip address 192.168.1.174 255.255.255.240
+exit
+interface fa0/0.41
+description NETE_VoIP
+encapsulation dot1Q 41
+ip address 192.168.1.190 255.255.255.240
+exit
+interface fa0/0.50
+description TESTER
+encapsulation dot1Q 50
+ip address 192.168.1.110 255.255.255.240
+exit
+interface fa0/0.51
+description TESTER_VoIP
+encapsulation dot1Q 51
+ip address 192.168.1.126 255.255.255.240
+exit
+interface fa0/0.60
+description UX
+encapsulation dot1Q 60
+ip address 192.168.1.142 255.255.255.240
+exit
+interface fa0/0.61
+description UX_VoIP
+encapsulation dot1Q 61
+ip address 192.168.1.158 255.255.255.240
+exit
+interface fa0/0
+no shutdown
+exit
+exit
+wr
