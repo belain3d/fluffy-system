@@ -46,9 +46,9 @@ enable
  vlan 90
   name SERVER
   exit
- interface range fa0/23 - 0/24
+ interface range fa0/23 - 24
   switchport mode trunk
-  swithcport trunk allowed vlan 1,2,10,11,20,21,30,31,40,41,50,51,60,61,70,71,80,81,90
+  switchport trunk allowed vlan 1,2,10,11,20,21,30,31,40,41,50,51,60,61,70,71,80,81,90
   exit
  user admin password cisco privilege 15
  ip domain-name GD-IT-SW.hu
