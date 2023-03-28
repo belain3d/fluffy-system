@@ -61,6 +61,12 @@ description UX_VoIP
 encapsulation dot1Q 61
 ip address 192.168.1.158 255.255.255.240
 exit
+interface fa0/0.70
+description WiFi
+encapsulation dot1Q 70
+ip address 192.168.1.30 255.255.255.224
+exit
+
 interface fa0/0
 no shutdown
 exit

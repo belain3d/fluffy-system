@@ -28,11 +28,11 @@ enable
    switchport mode access
    switchport acces vlan 80
    exit
-  interface fa0/21
+  interface fa0/10
    switchport mode access
    switchport acces vlan 70
    exit
-  interface fa0/22
+  interface fa0/11
    switchport mode access
    switchport acces vlan 90
    exit
