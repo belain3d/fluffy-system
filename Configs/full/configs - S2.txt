@@ -1,0 +1,113 @@
+enable
+configure terminal
+hostname S1
+ip domain-name GD-IT-SW.hu
+ vlan 2
+  name MNGT_VoIP
+  exit
+ vlan 10
+  name SWITCH
+  exit
+ vlan 20
+  name FRONT
+  exit
+ vlan 21
+  name FRONT_VoIP
+  exit
+ vlan 30
+  name BACK
+  exit
+ vlan 31
+  name BACK_VoIP
+  exit
+ vlan 40
+  name NETE
+  exit
+ vlan 41
+  name NETE_VoIP
+  exit
+ vlan 50
+  name TESTER
+  exit
+ vlan 51
+  name TESTER_VoIP
+  exit
+ vlan 60
+  name UX
+  exit
+ vlan 61
+  name UX_VoIP
+  exit
+ vlan 70
+  name WIFI
+  exit
+ vlan 80
+  name PRINTER
+  exit
+ vlan 90
+  name SERVER
+  exit
+
+username admin privilege 1 password 0 cisco privilege 15
+spanning-tree vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90 priority 4096
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport voice vlan 21
+exit
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 20
+exit
+interface FastEthernet0/3
+ switchport mode access
+ switchport voice vlan 41
+exit
+interface FastEthernet0/4
+ switchport mode access
+ switchport access vlan 40
+exit
+interface FastEthernet0/5
+ switchport mode access
+ switchport voice vlan 51
+exit
+interface FastEthernet0/6
+ switchport mode access
+ switchport access vlan 50
+exit
+
+interface FastEthernet0/10
+ switchport mode access
+ switchport access vlan 70
+exit
+
+interface FastEthernet0/20
+ switchport mode access
+ switchport access vlan 80
+exit
+interface FastEthernet0/21
+ switchport mode trunk 
+ switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
+exit
+interface range FastEthernet0/22, fa0/24
+ switchport mode trunk
+ switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
+ channel-protocol pagp
+ channel-group 1 mode desirable
+exit
+interface FastEthernet0/23
+ switchport mode trunk
+ switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
+exit
+
+interface Vlan1
+ ip address 192.168.1.211 255.255.255.240
+ no shutdown
+exit
+
+line vty 0 15
+ login local
+ transport input ssh
+exit
+exit
+wr
