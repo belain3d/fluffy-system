@@ -51,38 +51,30 @@ ip domain-name GD-IT-SW.hu
 username admin privilege 1 password 0 cisco privilege 15
 spanning-tree vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90 priority 0
 
-interface FastEthernet0/1
+interface range FastEthernet0/1 - 4
  switchport mode access
+ switchport access vlan 1
  switchport voice vlan 2
 exit
-interface FastEthernet0/2
- switchport mode access
-exit
-interface FastEthernet0/3
- switchport mode access
- switchport voice vlan 31
-exit
-interface FastEthernet0/4
+interface range FastEthernet0/5 - 11
  switchport mode access
  switchport access vlan 30
+ switchport voice vlan 31
 exit
-interface FastEthernet0/5
- switchport mode access
- switchport voice vlan 51
-exit
-interface FastEthernet0/6
+interface range FastEthernet0/12 - 16
  switchport mode access
  switchport access vlan 50
+ switchport voice vlan 51
 exit
-interface FastEthernet0/10
+interface FastEthernet0/17
  switchport mode access
  switchport access vlan 70
 exit
-interface FastEthernet0/11
+interface FastEthernet0/18
  switchport mode access
  switchport access vlan 90
 exit
-interface FastEthernet0/20
+interface FastEthernet0/19
  switchport mode access
  switchport access vlan 80
 exit
