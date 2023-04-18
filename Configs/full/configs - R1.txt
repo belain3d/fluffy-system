@@ -65,6 +65,7 @@ interface fa0/0.70
 description WiFi
 encapsulation dot1Q 70
 ip address 192.168.1.30 255.255.255.224
+ip helper-address 192.168.1.233
 exit
 
 interface fa0/0
@@ -134,11 +135,6 @@ exit
 ip dhcp pool UX_VoIP
 network 192.168.1.144 255.255.255.240
 default-router 192.168.1.158
-dns-server 192.168.1.233
-exit
-ip dhcp pool WiFi
-network 192.168.1.0 255.255.255.224
-default-router 192.168.1.30
 dns-server 192.168.1.233
 exit
 ip dhcp excluded-address 192.168.1.27 192.168.1.29

@@ -90,7 +90,7 @@ interface FastEthernet0/21
  switchport mode trunk
  switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
 exit
-interface range FastEthernet0/22 - 0/23
+interface range FastEthernet0/22 - 23
  switchport mode trunk
  switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
  channel-protocol lacp

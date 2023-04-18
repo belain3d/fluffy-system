@@ -65,11 +65,7 @@ network 192.168.1.144 255.255.255.240
 default-router 192.168.1.158
 dns-server 192.168.1.233
 exit
-ip dhcp pool WiFi
-network 192.168.1.0 255.255.255.224
-default-router 192.168.1.30
-dns-server 192.168.1.233
-exit
+
 ip dhcp excluded-address 192.168.1.27 192.168.1.29
 ip dhcp excluded-address 192.168.1.206
 ip dhcp excluded-address 192.168.1.198
