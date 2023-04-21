@@ -67,6 +67,12 @@ encapsulation dot1Q 70
 ip address 192.168.1.30 255.255.255.224
 ip helper-address 192.168.1.233
 exit
+interface fa0/0.80
+description PRINTER
+encapsulation dot1Q 80
+ip address 192.168.1.230 255.255.255.248
+ip helper-address 192.168.1.233
+exit
 
 interface fa0/0
 no shutdown
@@ -150,6 +156,12 @@ default-router 192.168.1.158
 dns-server 192.168.1.233
 domain-name GD-IT.local
 exit
+ip dhcp pool PRINTER
+network 192.168.1.224 255.255.255.248
+default-router 192.168.1.230
+dns-server 192.168.1.233
+domain-name GD-IT.local
+exit
 ip dhcp excluded-address 192.168.1.27 192.168.1.29
 ip dhcp excluded-address 192.168.1.206
 ip dhcp excluded-address 192.168.1.198
@@ -163,5 +175,6 @@ ip dhcp excluded-address 192.168.1.110
 ip dhcp excluded-address 192.168.1.126
 ip dhcp excluded-address 192.168.1.142
 ip dhcp excluded-address 192.168.1.158
+ip dhcp excluded-address 192.168.1.224
 exit
 wr

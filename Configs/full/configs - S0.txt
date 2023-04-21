@@ -75,12 +75,6 @@ interface range FastEthernet0/12 - 16
  spanning-tree bpduguard enable
  description TESTER
 exit
-interface FastEthernet0/17
- switchport mode access
- switchport access vlan 70
- spanning-tree portfast
- description WIFI
-exit
 interface FastEthernet0/18
  switchport mode access
  switchport access vlan 90
@@ -89,6 +83,12 @@ interface FastEthernet0/18
  description SERVER
 exit
 interface FastEthernet0/19
+ switchport mode access
+ switchport access vlan 70
+ spanning-tree portfast
+ description WIFI
+exit
+interface FastEthernet0/20
  switchport mode access
  switchport access vlan 80
  spanning-tree portfast
@@ -108,7 +108,6 @@ exit
 interface FastEthernet0/24
  switchport mode trunk
  switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
- spanning-tree trunk
 exit
 interface Vlan1
  ip address 192.168.1.209 255.255.255.240
