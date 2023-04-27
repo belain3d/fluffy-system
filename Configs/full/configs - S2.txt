@@ -103,7 +103,7 @@ interface FastEthernet0/23
  switchport mode trunk
  switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
 exit
-
+crypto key generate rsa general-keys modulus 1024
 interface Vlan1
  ip address 192.168.1.211 255.255.255.240
  no shutdown

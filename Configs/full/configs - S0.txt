@@ -113,6 +113,7 @@ interface Vlan1
  ip address 192.168.1.209 255.255.255.240
  no shutdown
 exit
+crypto key generate rsa general-keys modulus 1024
 line vty 0 15
  login local
  transport input ssh

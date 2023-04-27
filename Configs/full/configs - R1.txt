@@ -1,6 +1,7 @@
 enable
 configure terminal
 hostname R1
+ip domain-name GD-IT-SW.hu
 interface fa0/0.1
 encapsulation dot1Q 1
 description MNGT
@@ -180,5 +181,13 @@ ip dhcp excluded-address 192.168.1.126
 ip dhcp excluded-address 192.168.1.142
 ip dhcp excluded-address 192.168.1.158
 ip dhcp excluded-address 192.168.1.224
+crypto key generate rsa general-keys modulus 1024
+username admin privilege 1 password 0 cisco privilege 15
+line vty 0 15
+ login local
+ transport input ssh
+interface vlan 1
+ip addr 192.168.1.212 255.255.255.240
+exit
 exit
 wr
