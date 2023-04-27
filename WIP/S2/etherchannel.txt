@@ -1,0 +1,134 @@
+FastEthernet0/21:
+Port state    = Up Mstr In-Bndl
+Channel group = 2           Mode = Desirable-Sl    Gcchange = 0
+Port-channel  = Po2         GC   = 0x00020001      Pseudo port-channel = Po2
+Port index    = 0           Load = 0x00            Protocol =   PAgP
+
+Flags:  S - Device is sending Slow hello.  C - Device is in Consistent state.
+        A - Device is in Auto mode.        P - Device learns on physical port.
+        d - PAgP is down.
+Timers: H - Hello timer is running.        Q - Quit timer is running.
+        S - Switching timer is running.    I - Interface timer is running.
+
+Local information:
+                                Hello    Partner  PAgP     Learning  Group
+Port      Flags State   Timers  Interval Count   Priority   Method  Ifindex
+Fa0/21    SC    U6/S7   H       30s      1        128        Any      5002
+
+Partner's information:
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Fa0/21    S3.GD-IT-SW.hu       0026.98d3.1580   Fa0/22      11s SC      10001
+
+Age of the port in the current state: 0d:01h:32m:05s
+
+----
+FastEthernet0/22:
+Port state    = Up Mstr Assoc In-Bndl
+Channel group = 1           Mode = Active          Gcchange = -
+Port-channel  = Po1         GC   =   -             Pseudo port-channel = Po1
+Port index    = 0           Load = 0x00            Protocol =   LACP
+
+Flags:  S - Device is sending Slow LACPDUs   F - Device is sending fast LACPDUs.
+        A - Device is in active mode.        P - Device is in passive mode.
+
+Local information:
+                            LACP port     Admin     Oper    Port        Port
+Port      Flags   State     Priority      Key       Key     Number      State
+Fa0/22    SA      bndl      32768         0x1       0x1     0x16        0x3D
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Fa0/22    SA      32768     0026.98d2.e400  23s    0x0    0x1    0x16    0x3D
+
+Age of the port in the current state: 0d:01h:34m:35s
+
+----
+FastEthernet0/23:
+Port state    = Up Mstr In-Bndl
+Channel group = 2           Mode = Desirable-Sl    Gcchange = 0
+Port-channel  = Po2         GC   = 0x00020001      Pseudo port-channel = Po2
+Port index    = 0           Load = 0x00            Protocol =   PAgP
+
+Flags:  S - Device is sending Slow hello.  C - Device is in Consistent state.
+        A - Device is in Auto mode.        P - Device learns on physical port.
+        d - PAgP is down.
+Timers: H - Hello timer is running.        Q - Quit timer is running.
+        S - Switching timer is running.    I - Interface timer is running.
+
+Local information:
+                                Hello    Partner  PAgP     Learning  Group
+Port      Flags State   Timers  Interval Count   Priority   Method  Ifindex
+Fa0/23    SC    U6/S7   H       30s      1        128        Any      5002
+
+Partner's information:
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Fa0/23    S3.GD-IT-SW.hu       0026.98d3.1580   Fa0/24      21s SC      10001
+
+Age of the port in the current state: 0d:01h:32m:09s
+
+----
+FastEthernet0/24:
+Port state    = Up Mstr Assoc In-Bndl
+Channel group = 1           Mode = Active          Gcchange = -
+Port-channel  = Po1         GC   =   -             Pseudo port-channel = Po1
+Port index    = 0           Load = 0x00            Protocol =   LACP
+
+Flags:  S - Device is sending Slow LACPDUs   F - Device is sending fast LACPDUs.
+        A - Device is in active mode.        P - Device is in passive mode.
+
+Local information:
+                            LACP port     Admin     Oper    Port        Port
+Port      Flags   State     Priority      Key       Key     Number      State
+Fa0/24    SA      bndl      32768         0x1       0x1     0x18        0x3D
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Fa0/24    SA      32768     0026.98d2.e400  10s    0x0    0x1    0x17    0x3D
+
+Age of the port in the current state: 0d:01h:34m:36s
+
+----
+Port-channel1:Port-channel1   (Primary aggregator)
+
+Age of the Port-channel   = 0d:01h:34m:47s
+Logical slot/port   = 2/1          Number of ports = 2
+HotStandBy port = null
+Port state          = Port-channel Ag-Inuse
+Protocol            =   LACP
+Port security       = Disabled
+
+Ports in the Port-channel:
+
+Index   Load   Port     EC state        No of bits
+------+------+------+------------------+-----------
+  0     00     Fa0/22   Active             0
+  0     00     Fa0/24   Active             0
+
+Time since last port bundled:    0d:01h:34m:37s    Fa0/24
+
+
+----
+Port-channel2:
+Age of the Port-channel   = 0d:01h:34m:48s
+Logical slot/port   = 2/2          Number of ports = 2
+GC                  = 0x00020001      HotStandBy port = null
+Port state          = Port-channel Ag-Inuse
+Protocol            =   PAgP
+Port security       = Disabled
+
+Ports in the Port-channel:
+
+Index   Load   Port     EC state        No of bits
+------+------+------+------------------+-----------
+  0     00     Fa0/21   Desirable-Sl       0
+  0     00     Fa0/23   Desirable-Sl       0
+
+Time since last port bundled:    0d:01h:32m:13s    Fa0/23

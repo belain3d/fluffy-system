@@ -1,0 +1,69 @@
+----
+FastEthernet0/22:
+Port state    = Up Mstr In-Bndl
+Channel group = 1           Mode = Desirable-Sl    Gcchange = 0
+Port-channel  = Po1         GC   = 0x00010001      Pseudo port-channel = Po1
+Port index    = 0           Load = 0x00            Protocol =   PAgP
+
+Flags:  S - Device is sending Slow hello.  C - Device is in Consistent state.
+        A - Device is in Auto mode.        P - Device learns on physical port.
+        d - PAgP is down.
+Timers: H - Hello timer is running.        Q - Quit timer is running.
+        S - Switching timer is running.    I - Interface timer is running.
+
+Local information:
+                                Hello    Partner  PAgP     Learning  Group
+Port      Flags State   Timers  Interval Count   Priority   Method  Ifindex
+Fa0/22    SC    U6/S7   H       30s      1        128        Any      5001
+
+Partner's information:
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Fa0/22    S2.GD-IT-SW.hu       0026.98d2.7200   Fa0/21      17s SC      20001
+
+Age of the port in the current state: 0d:01h:51m:51s
+
+----
+FastEthernet0/24:
+Port state    = Up Mstr In-Bndl
+Channel group = 1           Mode = Desirable-Sl    Gcchange = 0
+Port-channel  = Po1         GC   = 0x00010001      Pseudo port-channel = Po1
+Port index    = 0           Load = 0x00            Protocol =   PAgP
+
+Flags:  S - Device is sending Slow hello.  C - Device is in Consistent state.
+        A - Device is in Auto mode.        P - Device learns on physical port.
+        d - PAgP is down.
+Timers: H - Hello timer is running.        Q - Quit timer is running.
+        S - Switching timer is running.    I - Interface timer is running.
+
+Local information:
+                                Hello    Partner  PAgP     Learning  Group
+Port      Flags State   Timers  Interval Count   Priority   Method  Ifindex
+Fa0/24    SC    U6/S7   H       30s      1        128        Any      5001
+
+Partner's information:
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Fa0/24    S2.GD-IT-SW.hu       0026.98d2.7200   Fa0/23       9s SC      20001
+
+Age of the port in the current state: 0d:01h:51m:52s
+
+----
+Port-channel1:
+Age of the Port-channel   = 0d:01h:54m:30s
+Logical slot/port   = 2/1          Number of ports = 2
+GC                  = 0x00010001      HotStandBy port = null
+Port state          = Port-channel Ag-Inuse
+Protocol            =   PAgP
+Port security       = Disabled
+
+Ports in the Port-channel:
+
+Index   Load   Port     EC state        No of bits
+------+------+------+------------------+-----------
+  0     00     Fa0/22   Desirable-Sl       0
+  0     00     Fa0/24   Desirable-Sl       0
+
+Time since last port bundled:    0d:01h:51m:54s    Fa0/24

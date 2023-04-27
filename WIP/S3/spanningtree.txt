@@ -1,0 +1,302 @@
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    1
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4097   (priority 4096 sys-id-ext 1)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0002
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    2
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4098   (priority 4096 sys-id-ext 2)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0010
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    10
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4106   (priority 4096 sys-id-ext 10)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0020
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    20
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4116   (priority 4096 sys-id-ext 20)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0021
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    21
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4117   (priority 4096 sys-id-ext 21)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0030
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    30
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4126   (priority 4096 sys-id-ext 30)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0031
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    31
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4127   (priority 4096 sys-id-ext 31)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0040
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    40
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4136   (priority 4096 sys-id-ext 40)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0041
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    41
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4137   (priority 4096 sys-id-ext 41)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0050
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    50
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4146   (priority 4096 sys-id-ext 50)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0051
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    51
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4147   (priority 4096 sys-id-ext 51)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0060
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    60
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4156   (priority 4096 sys-id-ext 60)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0061
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    61
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4157   (priority 4096 sys-id-ext 61)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0070
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    70
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4166   (priority 4096 sys-id-ext 70)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0080
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    80
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4176   (priority 4096 sys-id-ext 80)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
+
+
+VLAN0090
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    90
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4186   (priority 4096 sys-id-ext 90)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p

@@ -1,0 +1,17 @@
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    1
+             Address     0026.98d2.e400
+             Cost        19
+             Port        21 (FastEthernet0/21)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4097   (priority 4096 sys-id-ext 1)
+             Address     0026.98d3.1580
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/21              Root FWD 19        128.21   P2p
+Po1                 Altn BLK 12        128.56   P2p
