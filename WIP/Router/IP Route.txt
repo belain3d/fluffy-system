@@ -1,0 +1,16 @@
+        192.168.1.0/24 is variably subnetted, 15 subnets, 4 masks
+C       192.168.1.96/28 is directly connected, FastEthernet0/0.50
+C       192.168.1.112/28 is directly connected, FastEthernet0/0.51
+C       192.168.1.64/28 is directly connected, FastEthernet0/0.20
+C       192.168.1.80/28 is directly connected, FastEthernet0/0.21
+C       192.168.1.32/28 is directly connected, FastEthernet0/0.30
+C       192.168.1.48/28 is directly connected, FastEthernet0/0.31
+C       192.168.1.0/27 is directly connected, FastEthernet0/0.70
+C       192.168.1.232/30 is directly connected, FastEthernet0/0.90
+C       192.168.1.224/29 is directly connected, FastEthernet0/0.80
+C       192.168.1.200/29 is directly connected, FastEthernet0/0.1
+C       192.168.1.192/29 is directly connected, FastEthernet0/0.2
+C       192.168.1.160/28 is directly connected, FastEthernet0/0.40
+C       192.168.1.176/28 is directly connected, FastEthernet0/0.41
+C       192.168.1.128/28 is directly connected, FastEthernet0/0.60
+C       192.168.1.144/28 is directly connected, FastEthernet0/0.61
