@@ -1,0 +1,30 @@
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     MNGT               connected    1          a-full  a-100 10/100BaseTX
+Fa0/2     MNGT               notconnect   1            auto   auto 10/100BaseTX
+Fa0/3     MNGT               notconnect   1            auto   auto 10/100BaseTX
+Fa0/4     MNGT               notconnect   1            auto   auto 10/100BaseTX
+Fa0/5     BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/6     BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/7     BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/8     BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/9     BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/10    BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/11    BACK               notconnect   30           auto   auto 10/100BaseTX
+Fa0/12    TESTER             notconnect   50           auto   auto 10/100BaseTX
+Fa0/13    TESTER             notconnect   50           auto   auto 10/100BaseTX
+Fa0/14    TESTER             notconnect   50           auto   auto 10/100BaseTX
+Fa0/15    TESTER             notconnect   50           auto   auto 10/100BaseTX
+Fa0/16    TESTER             notconnect   50           auto   auto 10/100BaseTX
+Fa0/17                       notconnect   70           auto   auto 10/100BaseTX
+Fa0/18    SERVER             connected    90         a-full  a-100 10/100BaseTX
+Fa0/19    WIFI               connected    70         a-half   a-10 10/100BaseTX
+Fa0/20    PRINTER            notconnect   80           auto   auto 10/100BaseTX
+Fa0/21                       connected    trunk      a-full  a-100 10/100BaseTX
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/22                       connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/23                       connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/24                       connected    trunk      a-full  a-100 10/100BaseTX
+Gi0/1                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/2                        notconnect   1            auto   auto 10/100/1000BaseTX
+Po1                          connected    trunk      a-full  a-100

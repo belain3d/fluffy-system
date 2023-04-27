@@ -8,6 +8,9 @@ sh ip route
 
 
 switch:
+sh int status
+sh vl br
+sh int trunk
 sh int etherchannel (összevonások)
 sh spanning-tree
 sh spanning-tree summary

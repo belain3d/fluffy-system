@@ -1,0 +1,35 @@
+Switch is in pvst mode
+Root bridge for: none
+Extended system ID           is enabled
+Portfast Default             is disabled
+PortFast BPDU Guard Default  is disabled
+Portfast BPDU Filter Default is disabled
+Loopguard Default            is disabled
+EtherChannel misconfig guard is enabled
+UplinkFast                   is disabled
+BackboneFast                 is disabled
+Configured Pathcost method used is short
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     0         0        0          2          2
+VLAN0002                     0         0        0          2          2
+VLAN0010                     0         0        0          2          2
+VLAN0020                     0         0        0          2          2
+VLAN0021                     0         0        0          2          2
+VLAN0030                     0         0        0          2          2
+VLAN0031                     0         0        0          2          2
+VLAN0040                     0         0        0          2          2
+VLAN0041                     0         0        0          2          2
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0050                     0         0        0          2          2
+VLAN0051                     0         0        0          2          2
+VLAN0060                     0         0        0          2          2
+VLAN0061                     0         0        0          2          2
+VLAN0070                     0         0        0          2          2
+VLAN0080                     0         0        0          2          2
+VLAN0090                     0         0        0          2          2
+---------------------- -------- --------- -------- ---------- ----------
+16 vlans                     0         0        0         32         32

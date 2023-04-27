@@ -1,0 +1,37 @@
+Switch is in pvst mode
+Root bridge for: VLAN0001-VLAN0002, VLAN0010, VLAN0020-VLAN0021
+  VLAN0030-VLAN0031, VLAN0040-VLAN0041, VLAN0050-VLAN0051, VLAN0060-VLAN0061
+  VLAN0070, VLAN0080, VLAN0090
+Extended system ID           is enabled
+Portfast Default             is disabled
+PortFast BPDU Guard Default  is disabled
+Portfast BPDU Filter Default is disabled
+Loopguard Default            is disabled
+EtherChannel misconfig guard is enabled
+UplinkFast                   is disabled
+BackboneFast                 is disabled
+Configured Pathcost method used is short
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     0         0        0          4          4
+VLAN0002                     0         0        0          4          4
+VLAN0010                     0         0        0          3          3
+VLAN0020                     0         0        0          3          3
+VLAN0021                     0         0        0          3          3
+VLAN0030                     0         0        0          3          3
+VLAN0031                     0         0        0          3          3
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0040                     0         0        0          3          3
+VLAN0041                     0         0        0          3          3
+VLAN0050                     0         0        0          3          3
+VLAN0051                     0         0        0          3          3
+VLAN0060                     0         0        0          3          3
+VLAN0061                     0         0        0          3          3
+VLAN0070                     0         0        0          4          4
+VLAN0080                     0         0        0          3          3
+VLAN0090                     0         0        0          4          4
+---------------------- -------- --------- -------- ---------- ----------
+16 vlans
