@@ -1,13 +1,13 @@
 router:
-sh vl br
-sh int trunk
-sh int status
 sh ip dhcp pool
 sh ip dhcp binding
 sh ip route
 
 
 switch:
+sh int status
+sh vl br
+sh int trunk
 sh int etherchannel (összevonások)
 sh spanning-tree
 sh spanning-tree summary
