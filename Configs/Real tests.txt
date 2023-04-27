@@ -1,0 +1,20 @@
+router:
+sh vl br
+sh int trunk
+sh int status
+sh ip dhcp pool
+sh ip dhcp binding
+sh ip route
+
+
+switch:
+sh int etherchannel (összevonások)
+sh spanning-tree
+sh spanning-tree summary
+
+
+switch 0. em:
+sh spanning-tree (root)
+
+switch 2. em:
+sh spanning-tree (vlan 1)
