@@ -12,6 +12,11 @@ description MNGT_VoIP
 encapsulation dot1Q 2
 ip address 192.168.1.198 255.255.255.248
 exit
+interface fa0/0.10
+description SWITCH
+encapsulation dot1Q 10
+ip address 192.168.1.222 255.255.255.240
+exit
 interface fa0/0.20
 description FRONT
 encapsulation dot1Q 20
@@ -86,85 +91,85 @@ exit
 ip dhcp pool MNGT
 network 192.168.1.200 255.255.255.248
 default-router 192.168.1.206
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool MNGT_VoIP
 network 192.168.1.192 255.255.255.248
 default-router 192.168.1.198
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool MNGT
 network 192.168.1.200 255.255.255.248
 default-router 192.168.1.206
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool FRONT
 network 192.168.1.64 255.255.255.240
 default-router 192.168.1.78
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool FRONT_VoIP
 network 192.168.1.80 255.255.255.240
 default-router 192.168.1.94
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool BACK
 network 192.168.1.32 255.255.255.240
 default-router 192.168.1.46
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool BACK_VoIP
 network 192.168.1.48 255.255.255.240
 default-router 192.168.1.62
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool NETE
 network 192.168.1.160 255.255.255.240
 default-router 192.168.1.174
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool NETE_VoIP
 network 192.168.1.176 255.255.255.240
 default-router 192.168.1.190
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool TESTER
 network 192.168.1.96 255.255.255.240
 default-router 192.168.1.110
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool TESTER_VoIP
 network 192.168.1.112 255.255.255.240
 default-router 192.168.1.126
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool UX
 network 192.168.1.128 255.255.255.240
 default-router 192.168.1.142
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool UX_VoIP
 network 192.168.1.144 255.255.255.240
 default-router 192.168.1.158
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp pool PRINTER
 network 192.168.1.224 255.255.255.248
 default-router 192.168.1.230
-dns-server 192.168.1.233
+dns-server 8.8.8.8
 domain-name GD-IT.local
 exit
 ip dhcp excluded-address 192.168.1.27 192.168.1.29
@@ -189,5 +194,11 @@ line vty 0 15
 interface vlan 1
 ip addr 192.168.1.212 255.255.255.240
 exit
+
+interface fa0/1
+ip address 192.168.50.11 255.255.255.0
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 192.168.50.1
 exit
 wr
