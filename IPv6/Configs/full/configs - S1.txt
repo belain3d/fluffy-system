@@ -1,0 +1,112 @@
+enable
+configure terminal
+hostname S1
+ip domain-name GD-IT-SW.hu
+ vlan 2
+  name MNGT_VoIP
+  exit
+ vlan 10
+  name SWITCH
+  exit
+ vlan 20
+  name FRONT
+  exit
+ vlan 21
+  name FRONT_VoIP
+  exit
+ vlan 30
+  name BACK
+  exit
+ vlan 31
+  name BACK_VoIP
+  exit
+ vlan 40
+  name NETE
+  exit
+ vlan 41
+  name NETE_VoIP
+  exit
+ vlan 50
+  name TESTER
+  exit
+ vlan 51
+  name TESTER_VoIP
+  exit
+ vlan 60
+  name UX
+  exit
+ vlan 61
+  name UX_VoIP
+  exit
+ vlan 70
+  name WIFI
+  exit
+ vlan 80
+  name PRINTER
+  exit
+ vlan 90
+  name SERVER
+  exit
+
+username admin privilege 1 password 0 cisco privilege 15
+
+interface range FastEthernet0/1 - 5
+ switchport mode access
+ switchport access vlan 20
+ switchport voice vlan 21
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ description FRONT
+exit
+interface range FastEthernet0/6 - 11
+ switchport mode access
+ switchport access vlan 30
+ switchport voice vlan 31
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ description BACK
+exit
+interface range FastEthernet0/12 - 18
+ switchport mode access
+ switchport access vlan 60
+ switchport voice vlan 61
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ description UX
+exit
+interface FastEthernet0/19
+ switchport mode access
+ switchport access vlan 70
+ spanning-tree portfast
+ description WIFI
+exit
+interface FastEthernet0/20
+ switchport mode access
+ switchport access vlan 80
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ description PRINTER
+exit
+interface range FastEthernet0/21, fa0/23
+ switchport mode trunk
+ switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
+ channel-protocol pagp
+ channel-group 2 mode desirable
+exit
+interface range FastEthernet0/22, fa0/24
+ switchport mode trunk
+ switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
+ channel-protocol lacp
+ channel-group 1 mode active
+exit
+crypto key generate rsa general-keys modulus 1024
+interface Vlan1
+ ip address 192.168.1.210 255.255.255.240
+ no shutdown
+exit
+line vty 0 15
+ login local
+ transport input ssh
+exit
+exit
+wr

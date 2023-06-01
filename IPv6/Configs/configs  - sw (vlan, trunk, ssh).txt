@@ -1,0 +1,61 @@
+enable
+ configure terminal
+ hostname S0
+ vlan 2
+  name MNGT_VoIP
+  exit
+ vlan 10
+  name SWITCH
+  exit
+ vlan 20
+  name FRONT
+  exit
+ vlan 21
+  name FRONT_VoIP
+  exit
+ vlan 30
+  name BACK
+  exit
+ vlan 31
+  name BACK_VoIP
+  exit
+ vlan 40
+  name NETE
+  exit
+ vlan 41
+  name NETE_VoIP
+  exit
+ vlan 50
+  name TESTER
+  exit
+ vlan 51
+  name TESTER_VoIP
+  exit
+ vlan 60
+  name UX
+  exit
+ vlan 61
+  name UX_VoIP
+  exit
+ vlan 70
+  name WIFI
+  exit
+ vlan 80
+  name PRINTER
+  exit
+ vlan 90
+  name SERVER
+  exit
+ interface range fa0/23 - 24
+  switchport mode trunk
+  switchport trunk allowed vlan 1,2,10,11,20,21,30,31,40,41,50,51,60,61,70,71,80,81,90
+  exit
+ user admin password cisco privilege 15
+ ip domain-name GD-IT-SW.hu
+ crypto key generate rsa general-keys modulus 2048
+ line vty 0 15
+   transport input ssh
+   login local
+   exit
+ exit
+wr

@@ -1,0 +1,40 @@
+enable
+ configure terminal
+  interface fa0/1
+   switchport mode access
+   switchport voice vlan 2
+   exit
+  interface fa0/2
+   switchport mode access
+   switchport acces vlan 1
+   exit
+  interface fa0/3
+   switchport mode access
+   switchport voice vlan 31
+   exit
+  interface fa0/4
+   switchport mode access
+   switchport acces vlan 30
+   exit
+  interface fa0/5
+   switchport mode access
+   switchport voice vlan 51
+   exit
+  interface fa0/6
+   switchport mode access
+   switchport acces vlan 50
+   exit
+  interface fa0/20
+   switchport mode access
+   switchport acces vlan 80
+   exit
+  interface fa0/10
+   switchport mode access
+   switchport acces vlan 70
+   exit
+  interface fa0/11
+   switchport mode access
+   switchport acces vlan 90
+   exit
+  exit
+ wr

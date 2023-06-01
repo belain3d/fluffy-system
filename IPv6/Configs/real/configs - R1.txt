@@ -6,84 +6,117 @@ interface fa0/0.1
 encapsulation dot1Q 1
 description MNGT
 ip address 192.168.1.206 255.255.255.248
+ipv6 address 2001:db8:acad:1::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.2
 description MNGT_VoIP
 encapsulation dot1Q 2
 ip address 192.168.1.198 255.255.255.248
+ipv6 address 2001:db8:acad:2::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.10
 description SWITCH
 encapsulation dot1Q 10
 ip address 192.168.1.222 255.255.255.240
+ipv6 address 2001:db8:acad:10::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.20
 description FRONT
 encapsulation dot1Q 20
 ip address 192.168.1.78 255.255.255.240
+ipv6 address 2001:db8:acad:20::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.21
 description FRONT_VoIP
 encapsulation dot1Q 21
 ip address 192.168.1.94 255.255.255.240
+ipv6 address 2001:db8:acad:21::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.30
 description BACK
 encapsulation dot1Q 30
 ip address 192.168.1.46 255.255.255.240
+ipv6 address 2001:db8:acad:30::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.31
 description BACK_VoIP
 encapsulation dot1Q 31
 ip address 192.168.1.62 255.255.255.240
+ipv6 address 2001:db8:acad:31::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.40
 description NETE
 encapsulation dot1Q 40
 ip address 192.168.1.174 255.255.255.240
+ipv6 address 2001:db8:acad:40::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.41
 description NETE_VoIP
 encapsulation dot1Q 41
 ip address 192.168.1.190 255.255.255.240
+ipv6 address 2001:db8:acad:41::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.50
 description TESTER
 encapsulation dot1Q 50
 ip address 192.168.1.110 255.255.255.240
+ipv6 address 2001:db8:acad:50::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.51
 description TESTER_VoIP
 encapsulation dot1Q 51
 ip address 192.168.1.126 255.255.255.240
+ipv6 address 2001:db8:acad:51::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.60
 description UX
 encapsulation dot1Q 60
 ip address 192.168.1.142 255.255.255.240
+ipv6 address 2001:db8:acad:60::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.61
 description UX_VoIP
 encapsulation dot1Q 61
 ip address 192.168.1.158 255.255.255.240
+ipv6 address 2001:db8:acad:61::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.70
 description WiFi
 encapsulation dot1Q 70
 ip address 192.168.1.30 255.255.255.224
 ip helper-address 192.168.1.233
+ipv6 address 2001:db8:acad:70::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.80
 description PRINTER
 encapsulation dot1Q 80
 ip address 192.168.1.230 255.255.255.248
+ipv6 address 2001:db8:acad:80::1/64
+ipv6 address fe80::1 link
 exit
 interface fa0/0.90
 description SERVER
 encapsulation dot1Q 90
 ip address 192.168.1.234 255.255.255.252
+ipv6 address 2001:db8:acad:90::1/64
+ipv6 address fe80::1 link
 exit
 
+ipv6 unicast-routing
 
 interface fa0/0
 no shutdown

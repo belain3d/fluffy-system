@@ -1,0 +1,8 @@
+Wifi - 30+2 = 32
+Backend - 2*(13+2) = 30
+Frontend - 2*(11+2) = 26
+Tester - 2*(10+2) = 24
+Designer - 2*(7+2) = 18
+Neteng - 2*(7+2) = 18
+Management - 2*(4+2) = 12
+
