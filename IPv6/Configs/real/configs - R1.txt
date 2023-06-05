@@ -210,43 +210,43 @@ ip dhcp excluded-address 192.168.1.87
 
 
 ipv6 dhcp pool MNGT
-address prefix 2001:db8:acad:1::/64 lifetime 86400
+address prefix 2001:db8:acad:1::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-MNGT.hu
 exit
 
 ipv6 dhcp pool FRONT
-address prefix 2001:db8:acad:20::/64 lifetime 86400
+address prefix 2001:db8:acad:20::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-FRONT.hu
 exit
 
 ipv6 dhcp pool BACK
-address prefix 2001:db8:acad:30::/64 lifetime 86400
+address prefix 2001:db8:acad:30::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-BACK.hu
 exit
 
 ipv6 dhcp pool NETE
-address prefix 2001:db8:acad:40::/64 lifetime 86400
+address prefix 2001:db8:acad:40::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-NETE.hu
 exit
 
 ipv6 dhcp pool TESTER
-address prefix 2001:db8:acad:50::/64 lifetime 86400
+address prefix 2001:db8:acad:50::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-TESTER.hu
 exit
 
 ipv6 dhcp pool UX
-address prefix 2001:db8:acad:60::/64 lifetime 86400
+address prefix 2001:db8:acad:60::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-UX.hu
 exit
 
 ipv6 dhcp pool PRINTER
-address prefix 2001:db8:acad:80::/64 lifetime 86400
+address prefix 2001:db8:acad:80::/64 
 dns-server 2001:db8:acad:90::2
 domain-name GD-IT-PRINTER.hu
 exit

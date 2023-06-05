@@ -4,7 +4,7 @@ hostname S1
 ip domain-name GD-IT-SW.hu
 
 
- vlan 2
+vlan 2
   name MNGT_VoIP
   exit
 
@@ -19,7 +19,15 @@ ip domain-name GD-IT-SW.hu
  vlan 21
   name FRONT_VoIP
   exit
-  
+
+ vlan 30
+  name BACK
+  exit
+
+ vlan 31
+  name BACK_VoIP
+  exit
+
  vlan 40
   name NETE
   exit
@@ -36,20 +44,31 @@ ip domain-name GD-IT-SW.hu
   name TESTER_VoIP
   exit
 
+ vlan 60
+  name UX
+  exit
+
+ vlan 61
+  name UX_VoIP
+  exit
  vlan 70
-  name WIFI
+  name WIFI_Devices
+  exit
+
+ vlan 71
+  name WIFI_Routers
   exit
 
  vlan 80
   name PRINTER
   exit
-
+  
  vlan 90
   name SERVER
   exit
 
 username admin privilege 1 password 0 cisco privilege 15
-spanning-tree vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90 priority 4096
+spanning-tree vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90 priority 8192
 
 interface range gig1/0/1 - 6
  switchport mode access

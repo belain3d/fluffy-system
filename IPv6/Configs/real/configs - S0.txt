@@ -4,12 +4,20 @@ hostname S0
 ip domain-name GD-IT-SW.hu
 
 
- vlan 2
+vlan 2
   name MNGT_VoIP
   exit
 
  vlan 10
   name SWITCH
+  exit
+
+ vlan 20
+  name FRONT
+  exit
+
+ vlan 21
+  name FRONT_VoIP
   exit
 
  vlan 30
@@ -20,6 +28,14 @@ ip domain-name GD-IT-SW.hu
   name BACK_VoIP
   exit
 
+ vlan 40
+  name NETE
+  exit
+
+ vlan 41
+  name NETE_VoIP
+  exit
+
  vlan 50
   name TESTER
   exit
@@ -28,6 +44,13 @@ ip domain-name GD-IT-SW.hu
   name TESTER_VoIP
   exit
 
+ vlan 60
+  name UX
+  exit
+
+ vlan 61
+  name UX_VoIP
+  exit
  vlan 70
   name WIFI_Devices
   exit
@@ -39,10 +62,11 @@ ip domain-name GD-IT-SW.hu
  vlan 80
   name PRINTER
   exit
-
+  
  vlan 90
   name SERVER
   exit
+
 
 username admin privilege 1 password 0 cisco privilege 15
 spanning-tree vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90 priority 0
@@ -110,6 +134,9 @@ interface gig1/1/4
  switchport mode trunk
  switchport trunk allowed vlan 1-2,10-11,20-21,30-31,40-41,50-51,60-61,70-71,80-81,90
 exit
+
+
+
 
 interface Vlan1
  ipv6 address 2001:db8:acad:10::2/64
