@@ -19,7 +19,7 @@ exit
 interface gig0/0/0.2
 description MNGT_VoIP
 encapsulation dot1Q 2
-ip address 192.168.1.87 255.255.255.248
+ip address 192.168.1.86 255.255.255.248
 exit
 
 interface gig0/0/0.10
@@ -44,7 +44,7 @@ exit
 interface gig0/0/0.21
 description FRONT_VoIP
 encapsulation dot1Q 21
-ip address 192.168.1.31 255.255.255.240
+ip address 192.168.1.30 255.255.255.240
 exit
 
 interface gig0/0/0.30
@@ -62,7 +62,7 @@ exit
 interface gig0/0/0.31
 description BACK_VoIP
 encapsulation dot1Q 31
-ip address 192.168.1.15 255.255.255.240
+ip address 192.168.1.14 255.255.255.240
 exit
 
 interface gig0/0/0.40
@@ -80,7 +80,7 @@ exit
 interface gig0/0/0.41
 description NETE_VoIP
 encapsulation dot1Q 41
-ip address 192.168.1.79 255.255.255.240
+ip address 192.168.1.78 255.255.255.240
 exit
 
 interface gig0/0/0.50
@@ -98,7 +98,7 @@ exit
 interface gig0/0/0.51
 description TESTER_VoIP
 encapsulation dot1Q 51
-ip address 192.168.1.47 255.255.255.240
+ip address 192.168.1.46 255.255.255.240
 exit
 
 interface gig0/0/0.60
@@ -116,7 +116,7 @@ exit
 interface gig0/0/0.61
 description UX_VoIP
 encapsulation dot1Q 61
-ip address 192.168.1.63 255.255.255.240
+ip address 192.168.1.62 255.255.255.240
 exit
 
 interface gig0/0/0.70
@@ -161,42 +161,42 @@ exit
 
 ip dhcp pool MNGT_VoIP
 network 192.168.1.80 255.255.255.248
-default-router 192.168.1.87
+default-router 192.168.1.86
 dns-server 8.8.8.8
 domain-name GD-IT.local-mngt_voip
 exit
 
 ip dhcp pool FRONT_VoIP
 network 192.168.1.16 255.255.255.240
-default-router 192.168.1.31
+default-router 192.168.1.30
 dns-server 8.8.8.8
 domain-name GD-IT.local-front_voip
 exit
 
 ip dhcp pool BACK_VoIP
 network 192.168.1.0 255.255.255.240
-default-router 192.168.1.15
+default-router 192.168.1.14
 dns-server 8.8.8.8
 domain-name GD-IT.local-back_voip
 exit
 
 ip dhcp pool NETE_VoIP
 network 192.168.1.64 255.255.255.240
-default-router 192.168.1.79
+default-router 192.168.1.78
 dns-server 8.8.8.8
 domain-name GD-IT.local-nete_voip
 exit
 
 ip dhcp pool TESTER_VoIP
 network 192.168.1.32 255.255.255.240
-default-router 192.168.1.47
+default-router 192.168.1.46
 dns-server 8.8.8.8
 domain-name GD-IT.local-tester_voip
 exit
 
 ip dhcp pool UX_VoIP
 network 192.168.1.48 255.255.255.240
-default-router 192.168.1.63
+default-router 192.168.1.62
 dns-server 8.8.8.8
 domain-name GD-IT.local-ux_voip
 exit
